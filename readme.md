@@ -1,7 +1,8 @@
 # Spezi Themes
 
 This repository provides custom themes for **kitty terminal emulator** and **oh my posh** inspired by 'Paulaner Spezi' as such it is based around it's colors, giving it a nice vibrant, warm and deep color palate.
-`#fcc72d`, `#ea6d3d`, `#cb1f73`, `#383a6b`
+
+source: [https://www.color-hex.com/color-palette/116051](https://colorhunt.co/palette/f9ed69f08a5db83b5e6a2c70)
 
 ---
 
