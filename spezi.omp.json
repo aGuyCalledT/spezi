@@ -17,8 +17,8 @@
           "foreground": "#640D5F",
           "powerline_symbol": "",
           "style": "powerline",
-          "template": "{{ if not .Root }} \udb80\udf2a {{ end }}", // Zeigt sich nur, wenn .Root FALSE ist
-          "type": "text" // Wichtig: Typ ist 'text', nicht 'root'
+          "template": "{{ if not .Root }} \udb80\udf2a {{ end }}",
+          "type": "text"
         },
         {
           "background": "#640D5F",
