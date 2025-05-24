@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "#e03a3c",
+          "foreground": "#ffffff",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": " \uef3b root ",
+          "type": "root"
+        },
+	{
+          "background": "#fcc72d",
+          "foreground": "#640D5F",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": "{{ if not .Root }} \udb80\udf2a {{ end }}", // Zeigt sich nur, wenn .Root FALSE ist
+          "type": "text" // Wichtig: Typ ist 'text', nicht 'root'
+        },
+        {
+          "background": "#640D5F",
+          "foreground": "#ffffff",
+          "powerline_symbol": "",
+          "style": "powerline",
+          "template": " {{ .UserName }}@{{ .HostName }} ",
+          "type": "session"
+        },
+        {
+          "background": "#cb1f73",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "style": "full"
+          },
+          "style": "powerline",
+          "template": " {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "background": "#ea6d3d",
+          "foreground": "#640D5F",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " {{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "background": "#fcc72d",
+          "foreground": "#640D5F",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "type": "python"
+        },
+        {
+          "background": "#d90000",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \uee15 ",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#FFFFFF",
+          "style": "plain",
+          "template": "\udb80\udec7 ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 3
+}
